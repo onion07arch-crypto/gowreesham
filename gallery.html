@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Gowreesham | Our Home in Pictures</title>
+  <meta name="description" content="Explore the beautiful interiors and exteriors of Gowreesham — our family home in Padavarad, Ollur, Thrissur, Kerala." />
+  <meta property="og:title" content="Gallery — Gowreesham" />
+  <meta property="og:description" content="A visual tour of Gowreesham — interiors, exteriors, and every corner we love." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gowreesham.co.in/gallery" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+Malayalam:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="main-nav" class="nav nav--scrolled">
+    <div class="nav__brand">
+      <a href="index.html" class="nav__brand-link">
+        <img src="images/logo/g.svg" alt="Gowreesham Logo" class="nav__logo" />
+        <span class="nav__name">Gowreesham</span>
+      </a>
+    </div>
+    <button id="nav-toggle" class="nav__toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links" class="nav__links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="index.html#family">Family</a></li>
+      <li><a href="index.html#location">Location</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== GALLERY HERO ===================== -->
+  <section class="gallery-hero" id="gallery-hero">
+    <div class="gallery-hero__overlay"></div>
+    <div class="gallery-hero__content">
+      <span class="gallery-hero__eyebrow">Our Home in Pictures</span>
+      <h1 class="gallery-hero__title">Gallery</h1>
+      <p class="gallery-hero__subtitle">Every room tells a story, every corner holds a memory</p>
+    </div>
+  </section>
+
+  <!-- ===================== FILTER TABS ===================== -->
+  <section class="gallery-page section" id="gallery-section">
+    <div class="container">
+      <div class="gallery-tabs" id="gallery-tabs">
+        <button class="gallery-tab gallery-tab--active" data-filter="all" id="tab-all">All</button>
+        <button class="gallery-tab" data-filter="exterior" id="tab-exterior">Exterior</button>
+        <button class="gallery-tab" data-filter="interior" id="tab-interior">Interior</button>
+      </div>
+
+      <!-- ===================== EXTERIOR SECTION ===================== -->
+      <div class="gallery-category" data-category="exterior" id="cat-exterior">
+        <div class="gallery-category__header">
+          <span class="gallery-category__icon">🏡</span>
+          <div>
+            <h2 class="gallery-category__title">The Exterior</h2>
+            <p class="gallery-category__desc">The first impression of Gowreesham — warm, welcoming, and surrounded by nature</p>
+          </div>
+        </div>
+
+        <div class="masonry" id="masonry-exterior">
+          <!-- Row 1: Gate & entrance -->
+          <div class="masonry__item masonry__item--portrait" data-category="exterior">
+            <img src="images/exterior/gate-name.png" alt="Gowreesham gate with name plate" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>The Name Gate</h3>
+              <p>Gowreesham — welcoming you home</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/entance-stones.JPG" alt="Entrance stone pathway to Gowreesham" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Entrance Pathway</h3>
+              <p>Stone-laid steps leading to our doorstep</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--portrait" data-category="exterior">
+            <img src="images/exterior/ext2.jpg" alt="Exterior view of Gowreesham" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Side View</h3>
+              <p>The home seen from a different angle</p>
+            </div>
+          </div>
+
+          <!-- Row 2: Wide exteriors -->
+          <div class="masonry__item masonry__item--wide" data-category="exterior">
+            <img src="images/exterior/ext1.JPG" alt="Panoramic view of Gowreesham exterior" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Panoramic View</h3>
+              <p>Gowreesham in all its glory</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/ext4.JPG" alt="Gowreesham exterior view" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Full Frontage</h3>
+              <p>The complete face of our home</p>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/ext5.png" alt="Gowreesham exterior wide shot" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Wide Angle</h3>
+              <p>A broad view of the property</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--portrait" data-category="exterior">
+            <img src="images/exterior/ext3.jpg" alt="Gowreesham exterior detail" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Architectural Detail</h3>
+              <p>Where design meets comfort</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/night-view.JPG" alt="Gowreesham at night" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Night View</h3>
+              <p>Gowreesham glowing under the stars</p>
+            </div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/IMG_0990.JPG" alt="Gowreesham exterior" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Elegant Facade</h3>
+              <p>Modern Kerala architecture at its finest</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/IMG_0993.JPG" alt="Gowreesham exterior angle" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Another Perspective</h3>
+              <p>Every angle reveals something new</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--portrait" data-category="exterior">
+            <img src="images/exterior/parking.jpg" alt="Gowreesham parking area" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Parking Area</h3>
+              <p>Spacious and well-planned</p>
+            </div>
+          </div>
+
+          <!-- Row 5: Garden & rooftop -->
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/plants1.JPG" alt="Garden plants at Gowreesham" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Our Garden</h3>
+              <p>Lush greenery surrounding the home</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/rooftop1.JPG" alt="View from Gowreesham rooftop" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Rooftop View</h3>
+              <p>The neighbourhood from above</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="exterior">
+            <img src="images/exterior/rooftop2.JPG" alt="Rooftop panorama from Gowreesham" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Sky & Horizon</h3>
+              <p>Thrissur skyline from our terrace</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== INTERIOR SECTION ===================== -->
+      <div class="gallery-category" data-category="interior" id="cat-interior">
+        <div class="gallery-category__header">
+          <span class="gallery-category__icon">🛋️</span>
+          <div>
+            <h2 class="gallery-category__title">The Interior</h2>
+            <p class="gallery-category__desc">Where warmth lives — every room designed with love and purpose</p>
+          </div>
+        </div>
+
+        <div class="masonry" id="masonry-interior">
+          <!-- Living spaces -->
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/living-room.JPG" alt="Gowreesham living room" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Living Room</h3>
+              <p>The heart of family gatherings</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/living-room-swivel-partition.JPG" alt="Living room swivel partition" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Swivel Partition</h3>
+              <p>A clever design that transforms the space</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/step-down1.jpg" alt="Step-down living area" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Step-Down Living</h3>
+              <p>An elegant sunken sitting area</p>
+            </div>
+          </div>
+
+          <!-- Kitchen & Dining -->
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/step-down2.JPG" alt="Step-down area alternate view" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Step-Down Lounge</h3>
+              <p>Where conversations flow naturally</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/island-kitchen.JPG" alt="Gowreesham island kitchen" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Island Kitchen</h3>
+              <p>Where Kerala's finest dishes come to life</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/dining-room-painting.jpg" alt="Dining room with wall painting" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Dining Room</h3>
+              <p>Art adorning the walls of togetherness</p>
+            </div>
+          </div>
+
+          <!-- Pooja & rooms -->
+          <div class="masonry__item masonry__item--wide" data-category="interior">
+            <img src="images/interior/pooja.JPG" alt="Pooja room at Gowreesham" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Pooja Room</h3>
+              <p>A sacred space for prayer and reflection</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/amma-hall-paintings.jpg" alt="Hall with paintings" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Hall Paintings</h3>
+              <p>Art that tells our family's story</p>
+            </div>
+          </div>
+
+          <!-- Bedrooms & Details -->
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/adithi-room.JPG" alt="Adithi's room" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Adithi's Room</h3>
+              <p>A cheerful space for our little sunshine</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--landscape" data-category="interior">
+            <img src="images/interior/adithi-room-painting.jpg" alt="Wall painting in Adithi's room" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Room Artwork</h3>
+              <p>Hand-painted details in every corner</p>
+            </div>
+          </div>
+          <div class="masonry__item masonry__item--portrait" data-category="interior">
+            <img src="images/interior/washing-basin.jpg" alt="Designer washing basin" loading="lazy" />
+            <div class="masonry__overlay">
+              <h3>Wash Area</h3>
+              <p>Thoughtful design in every detail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightbox-img" class="lightbox__img" />
+      <div class="lightbox__caption" id="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc"></p>
+      </div>
+    </div>
+    <div class="lightbox__counter" id="lightbox-counter"></div>
+  </div>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <a href="#gallery-hero" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</a>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="images/logo/g.svg" alt="Gowreesham Logo" class="footer__logo" />
+          <span class="footer__name">Gowreesham</span>
+          <p class="footer__tagline">Where love lives.</p>
+        </div>
+        <div class="footer__links">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#family">Family</a>
+          <a href="index.html#location">Location</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Gowreesham. Made with ❤️ in Kerala.</p>
+        <p class="footer__domain">gowreesham.co.in</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

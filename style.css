@@ -572,6 +572,31 @@ ul { list-style: none; }
   color: var(--color-text-light-muted);
 }
 
+.gallery__cta-wrap {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+.gallery__cta {
+  display: inline-block;
+  padding: 14px 36px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-bg-primary);
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+  border-radius: var(--radius-xl);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  box-shadow: 0 4px 25px rgba(201, 164, 92, 0.3);
+}
+
+.gallery__cta:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 40px rgba(201, 164, 92, 0.5);
+}
+
 /* ============================================
    FAMILY
    ============================================ */

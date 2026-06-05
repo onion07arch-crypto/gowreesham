@@ -193,7 +193,9 @@ ul { list-style: none; }
 }
 
 .nav__logo {
-  font-size: 1.5rem;
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .nav__name {
@@ -823,7 +825,9 @@ ul { list-style: none; }
 }
 
 .footer__logo {
-  font-size: 1.8rem;
+  height: 38px;
+  width: auto;
+  display: block;
 }
 
 .footer__name {
